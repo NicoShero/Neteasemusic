@@ -1,0 +1,432 @@
+@keyframes slide { /*---每图片切换有两个阶段：位移切换和静置。中间的效果可以任意定制----*/
+    0%, 13% {
+        margin-left: 0px;
+    }
+    13%, 15% {
+    }
+    15%, 25% {
+        margin-left: -405px;
+    }
+    25%, 27% {
+    }
+    27%, 37% {
+        margin-left: -810px;
+    }
+    37%, 39% {
+    }
+    39%, 49% {
+        margin-left: -1215px;
+    }
+    49%, 51% {
+    }
+    51%, 61% {
+        margin-left: -1620px;
+    }
+    61%, 63% {
+    }
+    63%, 73% {
+        margin-left: -2025px;
+    }
+    73%, 75% {
+    }
+    75%, 85% {
+        margin-left: -2430px;
+    }
+    85%, 87% {
+    }
+    87%, 100% {
+        margin-left: -2835px;
+    }
+}
+::-webkit-scrollbar{
+    display:none;
+}
+*{margin: 0px;padding: 0px;border: 0px}
+.play{
+    animation: slide 36s ease-out infinite alternate;
+}
+.shadow{
+    box-shadow: 0 0 1px gray;
+}
+.clear{
+    clear: both;
+}
+.app{
+    width: 405px;
+    height: 720px;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+}
+.introarea{
+    width: 405px;
+    height: 40px;
+}
+.displaypage{
+    width: 100%;
+    height:590px;
+    display: flex;
+    flex-flow: column;
+    overflow: auto;
+}
+.body{
+    flex: 1;
+    overflow: auto;
+}
+.contain{
+    height: 440px;
+}
+.containintro{
+    color: black;
+    height: 30px;
+    font-size: 14px;
+    float: left;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.containalbumarea{
+    height: 380px;
+    width: 395px;
+    margin: 4px 5px 4px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 3;
+}
+.minicontainalbumarea{
+    height: 190px;
+    width: 395px;
+    margin: 4px 5px 4px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 3;
+}
+.containalbum{
+    width: 128px;
+    height: 160px;
+    margin: 15px 0px 15px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.containtextarea{
+    height: 128px;
+    width: 395px;
+    display: flex;
+}
+.containtextphoto{
+    width: 125px;
+    height: 125px;
+    border-radius: 5px;
+}
+.containtextintroarea{
+    width: 270px;
+    height: 128px;
+    display: flex;
+    flex-flow: column;
+}
+.containtextname{
+    margin-top:10px;
+    margin-left: 5px;
+    height: 40px;
+    font-size:14px;
+    font-weight: 800;
+    line-height: 40px;
+}
+.containtextintro{
+    margin-left: 5px;
+    height: 70px;
+    font-size: 6px;
+    color: #7d7d7d;
+}
+.containalbumphoto{
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    border-radius: 5px;
+    top: 0px;
+
+}
+.containalbumintro{
+    font-family: 幼圆;
+    font-weight: 200;
+    font-size: 6px;
+    width: 128px;
+    height:30px;
+    line-height: 15px;
+    position: absolute;
+    bottom:0px;
+    word-wrap:break-word;
+    word-break:break-all
+}
+.recommonitem{
+    height: 110px;
+    width: 100px;
+    position: relative;
+}
+.recommoniconback{
+    margin: 20px 25px 5px 25px;
+    position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(198,47,47,.5);
+    background-color: #C62F2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.recommonicon{
+    width: 30px;
+    height: 30px;
+}
+.recommonintro{
+    width: 100px;
+    color:black;
+    font-size:10px;
+    text-align: center;
+}
+.containintroright{
+    width: 20px;
+    height: 20px;
+    margin:25px 0px 0px 3px;
+}
+.friendiconarea{
+    height: 70px;
+    width: 50px;
+    margin: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.friendiconphoto{
+    width:50px ;
+    height: 50px;
+    border-radius: 50%;
+}
+.friendiconname{
+    bottom: 0px;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 6px;
+    font-weight: 300;
+    color: rgba(51,51,51,0.8);
+}
+.friendpagearea{
+    width: 405px;
+    height: auto;
+    display: flex;
+    box-shadow: 0 0 1px gray;
+}
+.friendpageicon{
+    width: 35px;
+    height: 35px;
+    margin: 15px 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+}
+.friendpageiconphoto{
+    align-self: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.friendpages{
+    width: 405px;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    overflow: hidden;
+}
+.friendpagetxtarea{
+    margin-right: 5px;
+    width: 350px;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-flow: wrap;
+    font-size: 12px;
+    line-height: 20px;
+}
+.friendpageintroarea{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.friendpageintroname{
+    height: 15px;
+    line-height: 15px;
+    color: darkcyan;
+    font-weight: 300;
+    font-size: 12px;
+}
+.friendpageintroaction{
+    margin-left: 3px;
+    height: 15px;
+    line-height: 15px;
+    color: #7d7d7d;
+    font-weight: 200;
+    font-size: 12px;
+}
+.friendpageintrotime{
+    height: 15px;
+    line-height: 15px;
+    font-size: 6px;
+    color: #7d7d7d;
+    position: absolute;
+    bottom: 0px;
+}
+.friendpageconcentrate{
+    align-self: center;
+    position:absolute;
+    right: 0px;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    border-radius: 12px;
+    background-color: #C62F2F;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 2pt;
+}
+.friendpagealbum{
+    width: 350px;
+    height: 180px;
+    border-radius: 5px;
+}
+.friendpagechoicearea{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.friendpagechoice{
+    width: 80px;
+    height: 40px;
+    color:#7d7d7d;
+    font-size: 10px;
+    line-height:40px;
+}
+.friendpagechoiceicon{
+    width: 20px;
+    height: 20px;
+}
+.marketpage{
+    height: 390px;
+    width: 405px;
+}
+.marketpagearea{
+    margin: 15px auto;
+    height: 360px;
+    width: 405px;
+    background: radial-gradient(gray,rgba(0,0,0,.3));
+    display: flex;
+    flex-flow: wrap;
+}
+.marketpagetitle{
+    margin-top: 15px;
+    height: 30px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+.marketpageintro{
+    margin-bottom: 10px;
+    height: 10px;
+    width: 100%;
+    line-height: 10px;
+    font-size: 6px;
+    color: #7d7d7d;
+    text-align: center;
+}
+.marketalbumarea{
+    height: 190px;
+    width: 395px;
+    margin: 0 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.marketalbum{
+    width: 125px;
+    height: 190px;
+    background: rgba(215,215,215,5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.marketalbumphoto{
+    width: 125px;
+    height: 125px;
+}
+.marketintro{
+    margin: 5px;
+    font-size: 8px;
+    line-height: 15px;
+}
+.marketprice{
+    margin: 5px;
+    font-size: 10px;
+    line-height: 15px;
+    color:#C62F2F;
+}
+.marketbutton{
+    box-shadow: 0 0 1px white;
+    margin: 30px auto;
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+#recommon{
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+}
+#recommonphoto img{
+    margin: 5px 5px;
+    width: 395px;
+    height: 150px;
+}
+#recommonphoto{
+    position: absolute;
+    z-index: 9;
+    width: 3300px;
+    background: linear-gradient(#C62F2F 50%,white 50%);
+}
+#recommonphoto:hover{animation-play-state:paused;}
+#recommontype{
+    height: 110px;
+    width: 405px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+#friendlistarea{
+    height:80px;
+    width: 405px;
+}
+#friendlist{
+    height: 80px;
+    width: 405px;
+    overflow:auto;
+    display: flex;
+    justify-content: space-between;
+}
+#dynamic{
+    flex: 1;
+    overflow: auto;
+}

@@ -1,0 +1,46 @@
+.playrow{
+    float: bottom;
+    height: 60px;
+    width: 405px;
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+}
+.playrowicon{
+    margin: 5px 5px;
+    height: 26px;
+    width: 26px;
+}
+#playrowalbum{
+    width: 50px;
+    height: 50px;
+}
+#playrowaintro{
+    height: 60px;
+    flex: 1;
+}
+#intro{
+    height: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+#introsong{
+    height: 36px;
+    font-size: 16px;
+    color: #515151;
+    font-weight: 200;
+}
+#introsinger{
+    color: #8a8a8a;
+    height: 10px;
+    font-size: 6px;
+}
+#playrowplay{
+    margin-top: 12px;
+    margin-right: 20px;
+    width: 36px;
+    height: 36px;
+}
+#playrowalike{
+    margin-top: 17px;
+}

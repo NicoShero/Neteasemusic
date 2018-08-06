@@ -1,0 +1,46 @@
+.menurow{
+    margin-top: -1px;
+    height: 50px;
+    background-color: #C62F2F;
+    display: flex;
+    justify-content: center;
+}
+.menuicon{
+    width: 26px;
+    height: 26px;
+    margin: 16px 18px;
+}
+#choicerow,#choice{
+    margin-top: -1px;
+    height: 50px;
+    width: 405px;
+    color: #dddddd;
+    line-height: 50px;
+    background-color: #C62F2F;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#menu{
+    margin-left: 0px;
+    margin-right: 65px;
+}
+#search{
+    margin-left: 65px;
+    margin-right: 0px;
+}
+#recommend{
+    flex: 1;
+    transition: all 0.5s ease-in-out;
+}
+#friendshare{
+    flex: 1;
+    transition: all 0.5s ease-in-out;
+}
+#onlineradio{
+    flex: 1;
+    transition: all 0.5s ease-in-out;
+}
+#recommend:hover,#friendshare:hover,#onlineradio:hover{
+    background-color: rgba(0,0,0,0.3);
+}

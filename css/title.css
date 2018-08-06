@@ -1,0 +1,27 @@
+.title{
+    height: 20px;
+    color: #E7E7E7;
+    font-size: 10px;
+    line-height: 19px;
+    background-color: #C62F2F;
+    display: flex;
+    justify-content: space-between;
+}
+.titleicon{
+    margin:2px 2px;
+    height: 15px;
+}
+#signal{
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+}
+#battery{
+    flex: 1;
+    display: flex;
+    flex-direction:row-reverse;
+}
+#liuliang{
+    width:50px;
+    line-height: 15px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/menurow.css">
+    <link rel="stylesheet" href="css/playrow.css">
+    </head>
+<body>
+<div class="app">
+    <div class="title">
+        <div id="signal">
+            <img class="titleicon" style="width: 9px;height: 9px"  src="img/signal-4g.png">
+            <img class="titleicon" style="margin-left: -6px" src="img/signal.png">
+            <div class="titleicon" id="liuliang">4KB/S</div>
+        </div>
+        <div id="time">12:00</div>
+        <div id="battery">
+            <img class="titleicon" style="margin-top:-8px; margin-right: -1px; height: 35px;" src="img/BATTERY.png">
+        </div>
+    </div>
+    <div class="menurow">
+        <img id="menu" class="menuicon"  src="img/menu.png">
+        <img id="musiclist" class="menuicon" src="img/music.png">
+        <img id="index" class="menuicon" data-page="choicepage.html" src="img/NetEase1.png">
+        <img id="mv" class="menuicon" data-page="choicepage.html" src="img/mv.png">
+        <img id="search" class="menuicon" src="img/search.png">
+    </div>
+    <div id="choicerow"></div>
+    <div id="dynamic"></div>
+    <div class="playrow">
+        <img id="playrowalbum" class="playrowicon" src="image/0.1.jpg">
+        <div id="playrowaintro">
+            <table id="intro">
+                <tr >
+                    <td id="introsong">Nicenight</td>
+                </tr>
+                <tr >
+                    <td id="introsinger">nicenight</td>
+                </tr>
+
+            </table></div>
+        <img id="playrowplay" class="playrowicon" src="img/play.png">
+        <img id="playrowalike" class="playrowicon" src="img/like.png">
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/choicerow.js"></script>

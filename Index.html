@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <style>
+        body{
+            margin: 0;padding: 0;
+        }
+        .head1{
+            background-image: url("image/Head1.png");
+            height: 70px;
+            width: 100%;
+        }
+        .head2{
+            background-image: url("image/head2.png");
+            height: 34px;
+            width: 100%;
+        }
+        .main{
+            height: auto;
+            width: 980px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .main1{
+            height: 337px;
+            width: 980px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function Change(id) {
+            var mage = document.getElementById("mage");
+            switch (id) {
+                case 1:
+                    mage.src = "image/1.jpg";
+                    document.bgColor="#CDD6DD";
+                    break;
+                case 2:
+                    mage.src = "image/2.jpg";
+                    document.bgColor="#4E173B";
+                    break;
+                case 3:
+                    mage.src = "image/3.jpg";
+                    document.bgColor="#0A0B0D";
+                    break;
+                case 4:
+                    mage.src = "image/4.jpg";
+                    document.bgColor="#78FDBE";
+                    break;
+                case 5:
+                    mage.src = "image/5.jpg";
+                    document.bgColor="#086979";
+                    break;
+                case 6:
+                    mage.src = "image/6.jpg";
+                    document.bgColor="#CDD6DD";
+                    break;
+                case 7:
+                    mage.src = "image/7.jpg";
+                    document.bgColor="#032831";
+                    break;
+                case 8:
+                    mage.src = "image/8.png";
+                    document.bgColor="#CDD6DD";
+                    break;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#CDD6DD">
+<map id="hot" name="hot">
+    <area  shape="rect" coords="271,337,295,319" onclick="Change(1)" >
+    <area  shape="rect" coords="295,337,319,319" onclick="Change(2)" >
+    <area  shape="rect" coords="319,337,343,319" onclick="Change(3)" >
+    <area  shape="rect" coords="343,337,367,319" onclick="Change(4)" >
+    <area  shape="rect" coords="367,337,391,319" onclick="Change(5)" >
+    <area  shape="rect" coords="391,337,415,319" onclick="Change(6)" >
+    <area  shape="rect" coords="415,337,439,319" onclick="Change(7)" >
+    <area  shape="rect" coords="439,337,463,319" onclick="Change(8)" >
+</map>
+<div class="head1"></div>
+<div class="head2"></div>
+<div class="main1"><img id="mage" src="image/1.jpg" usemap="hot"><img src="image/9.png"> </div>
+<div class="main"><img src="image/main.png" width="980px"></div>
+</body>
+</html>
